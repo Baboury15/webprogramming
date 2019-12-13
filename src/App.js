@@ -14,7 +14,9 @@ const jsonHeaders =() =>({
 
 class App extends Component {
   constructor(props){
-  super(props);
+  super(props);    
+
+  
 
   this.state={
     barberlis:[{id:1,first_name:"John ", last_name: "lee", rating: "Good"},
