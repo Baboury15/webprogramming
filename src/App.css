@@ -1,0 +1,94 @@
+.AbouText {
+  margin-top: auto ;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #634030;
+  
+}
+.link{
+flex-direction: row;
+flex-wrap: wrap;
+margin: 60px;
+justify-content: space-between;
+text-decoration: none;
+color:#ff6800;
+font-family: fantasy;
+font-size: 20px;
+}
+.photoAbout{
+  width: 25%;
+  margin:10px;;
+  }
+ /* .Login{
+   display: flex;
+   flex-flow: row;
+   justify-content: space-around;
+   background-color: #634030;
+
+ }  */
+ .input{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-around;
+   margin: 50px;
+
+   margin-right: 10%;
+   /* height: 70px; */
+   
+ }
+ #passwd{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 16px;
+ }
+ @media all and (min-width: 480px) {
+  .Login {
+    display: flex;
+    padding: 60px 0;
+    background-color: #634030;
+    align-content: center;
+    }
+    .logIn_words{
+      display: flex;
+      color: #ff6800;
+      margin:20px;
+      
+    }
+
+  .Login form {
+    
+    margin-right: 600px;
+   
+  }
+}
+.welcome_words{
+  display: flex;
+  justify-content: center;
+  color: #ff6800;
+
+}
+.Directions{
+ background-color: #634030;
+ margin:auto ;
+
+}
+.wlcm{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Price{
+  background-color: #634030;
+  height: 500px;
+
+
+}
+.barbers{
+  background-color: #634030;
+  height: 500px;
+
+}
+
+
