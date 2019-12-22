@@ -1,55 +1,43 @@
-import {Component} from "react"
+import React from 'react'
 
 
-class Pricings extends Components {
-  constructor(props){
-  super(props);
-  this.state ={
-    Pricing:[
-      {hairstyles:"", price:""},
-      {hairstyles:"", price:""},
-      {hairstyles:"", price:""}]     
+  
+  const Pricings =(props)=>{
 
-
-
-  }
-  PricingsHandler=()=>{
-    setPrice({
-   Pricing: [
+    const Pricing = [
      {hairstyles:" waves", price:" $25"},
      {hairstyles:" AfroStyle", price:" $25"},
      {hairstyles:"highHair", price:"$25"}]
- 
- 
- 
- })
-  }
-  }
-  render(){
+      
 
+ 
 
+const Princing2 = Pricing.map( p =>{
 
+  return <ul> {p.hairstyles} {p.price}</ul>
+})
+  
+  
 return (
   
-     <div className ="price">
-        <h3>Here are the price Range of our services </h3>
+
+  
+     <div className ="prices">
+       {props.checked}
+        <div className="price2">
+
+       <h3 >Here are the price Range of our services </h3>
         <h4>fells Free to Choose the selection you will like </h4>
 
-        <div className ="Price ">
+          <input type ="checkbox"/>  {Princing2}
 
-        <button onClick={PricingsHandler}> Show List</button>
-
-        {setPrice}
-
-        
+        <button onClick={()=>this.PricingsHandler}> Show List</button>
 
         </div>
-
-      
-     
       </div>
+    
     )}
-  }
+  
   
 
   

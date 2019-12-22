@@ -1,40 +1,4 @@
-// import React from "react"
 
-
-// const LogIn =(props)=>{
-
-
-//     return (
-       
-
-//         <div className = "Login">
-
-//         <div className="input ">
-//         <span><h3> Please Login here:</h3></span>
-
-//         <p id="passwd">First Name</p> 
-//         <input type ="text" onChange ={props.firstname} value ={props.current}/> 
-        
-
-//         <p id="passwd">Last Name</p>
-//         <input type ="text"  onChange ={props.lastname}  value={props.current} />
-      
-//        <p id="passwd" >password</p>
-//        <input type ="text"  onChange ={props.lastname}  value={props.current} />
-
-//          </div>
-
-
-
-
-// </div>
-
-        
-//     )
-
-// }
-
-// export default LogIn;
 
 import React, { Component } from "react";
 import Form from 'react-bootstrap/Form'
@@ -72,9 +36,9 @@ export default class Login extends Component {
       <div className="Login">
 
 
-                  <h2 className="logIn_words">Please LogIn </h2>
+                 <h2 className="logIn_words">Please LogIn </h2>
 
-
+    <div className ="secondLogIn">
         <Form onSubmit={this.handleSubmit}>
 
           <Form.Group controlId="email" bsSize="large">
@@ -92,15 +56,18 @@ export default class Login extends Component {
               type="password"
             />
           </Form.Group>
-          <Button
+          <Button className="buttons"
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
+            
+
           >
             Login
           </Button>
         </Form>
+        </div>
       </div>
     );
   }

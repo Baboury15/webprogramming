@@ -19,9 +19,12 @@ class App extends Component {
   
 
   this.state={
-    barberlis:[{id:1,first_name:"John ", last_name: "lee", rating: "Good"},
-    {id:2, first_name:"Cris ", last_name: "bern", rating: "Bad"},
-    {id:3, first_name:"ibra", last_name: "Boc", rating: "Good"}]
+    barberlis:[{id:1,first_name:"John ", last_name: "lee", rating_number: "Good"},
+    {id:2, first_name:"Cris ", last_name: "bern", rating_number: "Bad"},
+    {id:3, first_name:"ibra", last_name: "Boc", rating_number: "Good"}],
+
+
+    
   }
   
   
@@ -50,7 +53,8 @@ class App extends Component {
       first_name ={p.first_name}
       last_name ={p.last_name}
     
-      rating ={p.rating}
+      rating_number ={p.rating_number}
+
       />
   })
   
@@ -60,7 +64,8 @@ class App extends Component {
     
     <div className="App">
    
-   <Home  abc={blist} />
+   
+   <Home  />
   
        
   
