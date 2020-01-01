@@ -1,0 +1,72 @@
+.barbers{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+   
+    width: 90%;
+
+   
+     
+  }
+  .BarberlistPhotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+
+
+  }
+
+  .Barberlist_name{
+    display: flex;
+    margin: auto;
+    color: #ff6800;
+    font-family: fantasy;
+    font-size: 20px;
+    justify-content: center;
+    background-color: #634030;
+    margin-top: 2px;
+    width: 100%;
+    height: 50px;
+  }  
+  .Blist{
+    display: flex;
+    margin: 5%;
+    color: #ff6800;
+    
+    font-family: fantasy;
+    
+    }
+
+    .BB{
+        font-family: fantasy;
+        color: #ff6800;
+    }
+      /* }
+
+      .BarbersPhotoss{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+        margin:10px;;
+      } */
+
+      .photoAbout22{
+      
+          display: flex;
+          flex-wrap: wrap;
+          width: 50%;
+          margin:10%;
+          margin-left: 30%;
+          margin-top: 10px;
+          
+  
+  
+        }
+
+
+
+      

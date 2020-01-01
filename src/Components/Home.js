@@ -34,6 +34,7 @@ class Home extends Component{
     return (
 
       <div className = "Home">
+     
 <div>
       <BrowserRouter>
       
@@ -75,7 +76,7 @@ class Home extends Component{
       </div>
 
       
-
+      
 
      </div>
     

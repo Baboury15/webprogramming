@@ -1,13 +1,16 @@
 import React from "react"
 
 
-const About =()=>{
+const About =(props)=>{
 
 
     return (
        
 
         <div className = "AbouText">
+          
+
+
 
   <h1>ABOUT</h1>
 

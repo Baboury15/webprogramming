@@ -13,32 +13,45 @@ const jsonHeaders =() =>({
 });
 
 class App extends Component {
-  constructor(props){
-  super(props);    
 
+   
+ 
+  state={
+    barberlis:[
+    {first_name:"John ", last_name: "lee", rating_number: "Good"},
+    {first_name:"Cris ", last_name: "bern", rating_number: "Bad"},
+    {first_name:"ibra", last_name: "Boc", rating_number: "Good"}
+  ],
+
+    ShowBarbers:false,
+
+
+ }
+ 
   
-
-  this.state={
-    barberlis:[{id:1,first_name:"John ", last_name: "lee", rating_number: "Good"},
-    {id:2, first_name:"Cris ", last_name: "bern", rating_number: "Bad"},
-    {id:3, first_name:"ibra", last_name: "Boc", rating_number: "Good"}],
-
-
-    
-  }
-  
-  
-  this.barberNameHandler =()=>{
+  barberNameHandler =()=>{
   
     this.setState({
-      barberlis:[{id:1, first_name:"John ", last_name: "lee", rating: "Good"},
-      { id:2,first_name:"Cris ", last_name: "bern", rating: "Bad"},
-      {id:3,first_name:"ibra", last_name: "Boc", rating: "Good"}]
+      barberlis:[
+
+      { first_name:"John1 ", last_name: "lee1", rating: "Good1"},
+      { first_name:"Cris3 ", last_name: "bern3", rating: "Bad3"},
+      { first_name:"ibra4", last_name: "Boc4", rating: "Good4"}
+    
+    ]
     
   
     })
   }
-}
+
+   
+  barberButton =()=>{
+    const displaylist = this.state.ShowBarbers;
+      this.setState({
+        ShowBarbers: !displaylist,
+      })
+    }
+
 
 
 
@@ -64,16 +77,26 @@ class App extends Component {
     
     <div className="App">
    
+    {/* <button onClick={this.displaylist} >Show list </button> */}
+
+     { this.state.showBarbers ?
+     <div>
+
+<Barberlist
+ first_name ={this.state.barberlis.first_name}
+ last_name ={this.state.barberlis.last_name}
+ rating_number={this.state.barberlis.rating_number}
+ />
+ {blist}
    
-   <Home  />
-  
-       
-  
-            
-    </div>
+   </div> :null
+  }
+   <Home/>
+ 
+</div>
   );
 }
-}
 
+}
 
 export default App;

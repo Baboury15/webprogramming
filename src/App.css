@@ -11,6 +11,7 @@
   font-size: 20px;
   
 }
+
 .buttons{
   color: #ff6800;
   background-color: #634030;
@@ -102,35 +103,9 @@ font-size: 20px;
   justify-content: space-around;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.prices{
- display: flex;
- background-color: white;
- width: 100%;
- margin: auto;
- flex-wrap: wrap;
- flex-direction: row;
-justify-content: space-around;
-
-}
-.Barberlist_name{
-  display: flex;
-  margin: auto;
-  color: #ff6800;
-  font-family: fantasy;
 
 
- 
 
-}
-.Blist{
-display: flex;
-margin-left: 70px;
-margin-right: 30%;
-margin-top: 10%;
-color: #ff6800;
-
-
-}
 .names{
   display: flex;
   flex-direction: row;
@@ -150,29 +125,9 @@ color: #ff6800;
 
 
 }
-.BarbersPhotoss{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 70%;
-  margin:10px;;
-}
-.BB{
-  font-family: fantasy;
-  color: #ff6800;
-
-}
 
 
-.barbers{
-  display: flex;
-  background-color: white;
-  width: 50%;
-  margin: auto;
-  flex-wrap: wrap;
-  flex-direction: row;
- justify-content: space-around;
-   
-}
+
+
 
 

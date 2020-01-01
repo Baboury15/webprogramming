@@ -1,4 +1,5 @@
 import React from 'react'
+import './Pricings.css'
 
 
   
@@ -17,23 +18,88 @@ const Princing2 = Pricing.map( p =>{
   return <ul> {p.hairstyles} {p.price}</ul>
 })
   
+const style ={
+  backgroundColor:' white',
+  font: 'inherit',
+  border: '2px solid orange',
+  padding: '8px',
+  cursor: 'pointer',
+}
   
 return (
   
-
   
-     <div className ="prices">
-       {props.checked}
-        <div className="price2">
+     <div style ={style}  className ="prices">
+       
+        <div  className ="HairstylePrice">
 
-       <h3 >Here are the price Range of our services </h3>
-        <h4>fells Free to Choose the selection you will like </h4>
+        {/* <h1>Please select the Hairstyles you will like to have  </h1> */}
+         <ul className="qwert" >
+          
+        <li >  Waves : $25  </li>
+         
+        <li > Line Up :  $25 </li>
+         
+        <li > Box Fade : $25  </li>
+          
+        <li > Afro Fade : $25 </li>
+       
+        <li >  Clean Shave : $25   </li>
+        
+       <li >  Fancy : $25  </li>
 
-          <input type ="checkbox"/>  {Princing2}
+      <li > HighHair :  $25  </li>
+        
+          </ul>
+        
+         </div>
 
-        <button onClick={()=>this.PricingsHandler}> Show List</button>
+           <div >
 
-        </div>
+         <img  className ="photoAbout2" src={require('./Waves.jpg')} />  <p className="qwer">  Waves : $25  </p>
+           
+           </div>
+           
+           
+           <div>
+
+          <img  className ="photoAbout2" src={require('./ShaveSide.jpg')} /><p className="qwer"> Shave Side :  $25</p> 
+           
+           </div>
+
+          
+           <div>
+             
+          <img  className ="photoAbout2" src={require('./Clean_shave.jpg')} /> <p className="qwer"> Clean Shave : $25   </p>
+           
+           </div>
+
+          
+           <div>
+
+          <img  className ="photoAbout2" src={require('./Afro_fade.jpg')} /> <p className="qwer"> Box Fade : $25 </p>
+           
+           </div>
+
+           <div>
+
+           <img  className ="photoAbout2" src={require('./Line_Up.jpg')} /><p className="qwer"> Line Up : $25 </p>
+           
+           </div>
+           <div>
+             
+          <img  className ="photoAbout2" src={require('./Bear.jpg')} /><p className="qwer">  Fancy: $25 </p>
+           
+           </div>
+         
+
+
+
+
+
+
+
+        
       </div>
     
     )}
